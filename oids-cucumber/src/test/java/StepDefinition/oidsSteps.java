@@ -38,11 +38,28 @@ public class oidsSteps {
 	}
 
 	@Then("I verify the trap is correctly flagged as invalid")
+    // Write code here that parse the CLI output looking for word "invalid"
+
 	public void i_verify_the_trap_is_correctly_flagged_as_invalid() {
 	}
 
 	@Then("I verify the trap is a successor of any prefix to be {string}")
 	public void i_verify_the_trap_is_a_successor_of_any_prefix_to_be(String result) {
+	}
+	
+	@When("I input a SNMP {string} to the CLI utility")
+	public void i_input_a_snmp_to_the_cli_utility(String string) {
+	    // Write code here that input trap to the CLI utility
+	}
+
+	@Then("I verify the trap is a successor of any prefix to be true")
+	public void i_verify_the_trap_is_a_successor_of_any_prefix_to_be_true() {
+	    // Write code here that parse the CLI output looking for word "true"
+	}
+
+	@Then("I verify the trap is a successor of any prefix to be false")
+	public void i_verify_the_trap_is_a_successor_of_any_prefix_to_be_false() {
+	    // Write code here that parse the CLI output looking for word "false"
 	}
 
 }
